@@ -5,7 +5,7 @@ darkModeBtn.addEventListener('click', () => {
 });
 
 // Typing effect
-const text = "Welcome to My Personal Website!";
+const text = "This Website Is About Me! And My CV!";
 let i = 0;
 function typeEffect() {
   if (i < text.length) {
@@ -15,3 +15,4 @@ function typeEffect() {
   }
 }
 window.onload = typeEffect;
+
