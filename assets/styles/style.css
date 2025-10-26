@@ -25,10 +25,10 @@ nav {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  border: 2px solid white;       /* Outline around each tab */
-  padding: 6px 12px;             /* Space inside each box */
-  border-radius: 6px;            /* Rounded corners */
-  transition: 0.3s ease;         /* Smooth hover effect */
+  border: 2px solid white;      
+  padding: 6px 12px;             
+  border-radius: 6px;           
+  transition: 0.3s ease;         
 }
 .navbar a:hover {
   text-decoration: underline;
@@ -74,3 +74,4 @@ footer {
 .dark-mode footer {
   background-color: #222;
 }
+
