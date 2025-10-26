@@ -74,17 +74,30 @@ nav {
   color: #007bff;
 }
 
-/* ===== Section Headings ===== */
-section h1, 
+
+section h1,
 section h2 {
-  color: #007bff;
+  position: relative;
   font-size: 1.8em;
-  border-bottom: 4px solid #007bff; /* flat underline */
-  display: inline-block;
-  padding-bottom: 5px;
-  margin-bottom: 15px;
-  border-radius: 0; /* ensures straight underline */
+  color: #007bff;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
 }
+
+/* Full-width horizontal line */
+section h1::after,
+section h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;              /* full width of page */
+  height: 3px;
+  background-color: #007bff; /* blue line */
+  border-radius: 0;          /* keeps it straight, no curve */
+}
+
 
 /* ===== Profile Picture ===== */
 .profile-pic {
@@ -163,3 +176,4 @@ footer {
   color: #66b2ff;
   border-bottom-color: #66b2ff;
 }
+
