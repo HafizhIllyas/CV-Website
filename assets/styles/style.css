@@ -75,6 +75,7 @@ nav {
 }
 
 
+/* ===== Section Headings (full-width blue line, left aligned) ===== */
 section h1,
 section h2 {
   position: relative;
@@ -82,21 +83,42 @@ section h2 {
   color: #007bff;
   text-transform: uppercase;
   margin-bottom: 25px;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
 }
 
-/* Full-width horizontal line */
+/* Blue line across full width of section */
 section h1::after,
 section h2::after {
   content: "";
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 100%;              /* full width of page */
+  width: 100%;              /* full width under heading */
   height: 3px;
-  background-color: #007bff; /* blue line */
-  border-radius: 0;          /* keeps it straight, no curve */
+  background-color: #007bff;
+  border-radius: 0;
 }
+
+/* ===== Paragraph Text Centered ===== */
+section p {
+  text-align: center;       /* centers only paragraphs */
+  max-width: 900px;         /* keeps lines readable */
+  margin: 10px auto;
+  line-height: 1.6;
+}
+
+/* ===== Keep Lists Left Aligned ===== */
+section ul {
+  list-style-position: outside;
+  margin-left: 40px;        /* normal list indentation */
+}
+
+/* ===== Optional Dark Mode Line Color ===== */
+.dark-mode section h1::after,
+.dark-mode section h2::after {
+  background-color: #66b2ff;
+}
+
 
 
 /* ===== Profile Picture ===== */
@@ -176,4 +198,5 @@ footer {
   color: #66b2ff;
   border-bottom-color: #66b2ff;
 }
+
 
