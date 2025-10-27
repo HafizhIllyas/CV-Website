@@ -1,4 +1,4 @@
-/* ===== Base Page Styling ===== */
+
 body {
   font-family: 'Trirong', Arial, sans-serif;
   margin: 0;
@@ -7,7 +7,7 @@ body {
   color: #333;
 }
 
-/* ===== Navbar ===== */
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -25,7 +25,7 @@ nav {
   padding: 0;
 }
 
-/* Blue underline tabs */
+
 .navbar a {
   position: relative;
   color: white;
@@ -36,7 +36,7 @@ nav {
   transition: color 0.3s ease;
 }
 
-/* Underline animation */
+
 .navbar a::after {
   content: "";
   position: absolute;
@@ -48,7 +48,7 @@ nav {
   transition: width 0.3s ease;
 }
 
-/* Hover effect */
+
 .navbar a:hover {
   color: #dceeff;
 }
@@ -57,7 +57,7 @@ nav {
   width: 100%;
 }
 
-/* Dark mode button */
+
 #darkModeBtn {
   background: none;
   border: 2px solid white;
@@ -75,7 +75,7 @@ nav {
 }
 
 
-/* ===== Section Headings (full-width blue line, left aligned) ===== */
+
 section h1,
 section h2 {
   position: relative;
@@ -86,34 +86,34 @@ section h2 {
   padding-bottom: 12px;
 }
 
-/* Blue line across full width of section */
+
 section h1::after,
 section h2::after {
   content: "";
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 100%;              /* full width under heading */
+  width: 100%;           
   height: 3px;
   background-color: #007bff;
   border-radius: 0;
 }
 
-/* ===== Paragraph Text Centered ===== */
+
 section p {
-  text-align: center;       /* centers only paragraphs */
-  max-width: 900px;         /* keeps lines readable */
+  text-align: center;      
+  max-width: 900px;       
   margin: 10px auto;
   line-height: 1.6;
 }
 
-/* ===== Keep Lists Left Aligned ===== */
+
 section ul {
   list-style-position: outside;
-  margin-left: 40px;        /* normal list indentation */
+  margin-left: 40px;       
 }
 
-/* ===== Optional Dark Mode Line Color ===== */
+
 .dark-mode section h1::after,
 .dark-mode section h2::after {
   background-color: #66b2ff;
@@ -121,19 +121,21 @@ section ul {
 
 
 
-/* ===== Profile Picture ===== */
+
 .profile-pic {
   width: 150px;
   height: 150px;
-  object-fit: cover;  /* keeps it square */
-  border-radius: 0;   /* square corners */
+  object-fit: cover; 
+  border-radius: 0;   
   display: block;
   margin: 10px auto;
 }
 
 /* ===== Download Button ===== */
 .download-btn {
-  display: inline-block;
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
   padding: 10px 18px;
   background-color: #007bff;
   color: white;
@@ -149,12 +151,12 @@ section ul {
   color: #007bff;
 }
 
-/* ===== Sections ===== */
+
 section {
   padding: 20px;
 }
 
-/* ===== Footer ===== */
+
 footer {
   text-align: center;
   background-color: #333;
@@ -163,7 +165,7 @@ footer {
   border-top: 3px solid #007bff;
 }
 
-/* ===== Responsive Design ===== */
+
 @media (max-width: 600px) {
   .navbar {
     flex-direction: column;
@@ -171,7 +173,7 @@ footer {
   }
 }
 
-/* ===== Dark Mode ===== */
+
 .dark-mode {
   background-color: #121212;
   color: white;
@@ -198,5 +200,6 @@ footer {
   color: #66b2ff;
   border-bottom-color: #66b2ff;
 }
+
 
 
